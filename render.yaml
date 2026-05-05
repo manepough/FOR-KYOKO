@@ -1,7 +1,8 @@
 services:
-  - type: worker          # background worker = no sleep, runs 24/7
+  - type: worker          # ✅ background worker = 24/7, no spin down
     name: kyoko-bot
     runtime: python
+    pythonVersion: "3.12"  # ✅ pin to 3.12 — audiooop removed in 3.13+
     buildCommand: pip install -r requirements.txt
     startCommand: python kyoko.py
     envVars:
