@@ -1,0 +1,23 @@
+services:
+  - type: worker          # background worker = no sleep, runs 24/7
+    name: kyoko-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python kyoko.py
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false       # you'll paste this manually in Render dashboard
+      - key: OWNER_ID
+        sync: false
+      - key: GROQ_TOKEN_1
+        sync: false
+      - key: GROQ_TOKEN_2
+        sync: false
+      - key: GROQ_TOKEN_3
+        sync: false
+      - key: GROQ_TOKEN_4
+        sync: false
+      - key: GROQ_TOKEN_5
+        sync: false
+      - key: OPENAI_TOKEN
+        sync: false
