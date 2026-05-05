@@ -1,13 +1,13 @@
 services:
-  - type: worker          # ✅ background worker = 24/7, no spin down
+  - type: web             # ✅ free tier available
     name: kyoko-bot
     runtime: python
-    pythonVersion: "3.12"  # ✅ pin to 3.12 — audiooop removed in 3.13+
+    pythonVersion: "3.12"  # pin to 3.12 — audiooop removed in 3.13+
     buildCommand: pip install -r requirements.txt
     startCommand: python kyoko.py
     envVars:
       - key: DISCORD_TOKEN
-        sync: false       # you'll paste this manually in Render dashboard
+        sync: false
       - key: OWNER_ID
         sync: false
       - key: GROQ_TOKEN_1
