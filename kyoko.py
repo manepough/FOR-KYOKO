@@ -384,7 +384,7 @@ class KeepAlive(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
         self.end_headers()
-        self.wfile.write(b"Kyoko is alive ð")
+        self.wfile.write(b"Kyoko is alive!")
     def log_message(self, *args):
         pass  # silence request logs
 
