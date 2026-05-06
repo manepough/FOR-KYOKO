@@ -11,10 +11,10 @@ from openai import AsyncOpenAI
 # ══════════════════════════════════════════════════════════
 #   KYOKO CONFIG
 # ══════════════════════════════════════════════════════════
-GF_BOT_ID = 123456789012345678  # <-- your girlfriend bot's user ID (integer, no quotes)
+GF_BOT_ID = 1492835775241392189  # <-- your girlfriend bot's user ID (integer, no quotes)
 
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
-OWNER_ID      = int(os.getenv("OWNER_ID", "0"))
+OWNER_ID      = int(("1456322226491101224", "0"))
 GROQ_TOKENS   = [t for t in [
     os.getenv("GROQ_TOKEN_1"),
     os.getenv("GROQ_TOKEN_2"),
