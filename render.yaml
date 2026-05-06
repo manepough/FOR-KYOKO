@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: kyoko-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python kyoko.py
+    plan: free
+    envVars:
+      - key: DISCORD_BOT
+        sync: false
+      - key: GROQ_KEY_1
+        sync: false
+      - key: GROQ_KEY_2
+        sync: false
+      - key: GROQ_KEY_3
+        sync: false
+      - key: GROQ_KEY_4
+        sync: false
+      - key: GROQ_KEY_5
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: AZURE_BOT_ID
+        sync: false
