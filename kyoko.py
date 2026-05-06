@@ -14,7 +14,7 @@ from openai import AsyncOpenAI
 GF_BOT_ID = 1492835775241392189  # <-- your girlfriend bot's user ID (integer, no quotes)
 
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
-OWNER_ID      = int(("1456322226491101224", "0"))
+OWNER_ID      = ("1456322226491101224", "0")
 GROQ_TOKENS   = [t for t in [
     os.getenv("GROQ_TOKEN_1"),
     os.getenv("GROQ_TOKEN_2"),
